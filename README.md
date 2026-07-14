@@ -10,6 +10,12 @@ Randomly generates 100 processes with unique arrival times and service times. Th
 - Calculates averages for interarrival, service, turnaround, and total wait times
 - Outputs execution table so order can be visually seen
 
+# Skills Demonstrated
+- Operating System Fundamentals
+- Performance Analysis
+- Data Structures
+- Algorithm Design and simulation
+
 # Tech Stack
 - Just python, relatively simple
 
