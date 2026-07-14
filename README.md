@@ -18,7 +18,8 @@ Randomly generates 100 processes with unique arrival times and service times. Th
 - RandomProcessHelper.py: Helper function for main
 - main.py Executes program and contains scheduling logic
 
-# How to run:
+# How to Run:
 Install needed packages using pip or conda. These are listed in the requirements.txt file. Then run main as a python script and it should work!
 
 # Example output:
+![Sample Output](Images/"Full Output Example".png)
