@@ -22,4 +22,4 @@ Randomly generates 100 processes with unique arrival times and service times. Th
 Install needed packages using pip or conda. These are listed in the requirements.txt file. Then run main as a python script and it should work!
 
 # Example output:
-![Sample Output](Images/"Full Output Example".png)
+![Sample Output](Images/Full-Output-Example.png)
