@@ -59,9 +59,9 @@ while process_list: # while processes aren't done, yet queue is empty
 
         else:
             time += q # adds a quantum to the time
-            working_process.time_left -= q # subtracts a quantum from the time left
+            working_process.time_left -= q # subtracts a quantum from the time left on the process
 
-            waiting.pop(0) #only pops it off the waiting list, as it still needs more CPU time
+            waiting.pop(0) # only pops it off the waiting list, as it still needs more CPU time
             time += cs # adds in context switch time if neccesary
 
     for process in process_list:
@@ -114,13 +114,19 @@ columns = {
 
 table = pd.DataFrame(columns) # creates the table using our columns we created
 
+print("-------------------------------------------------------------------------")
+print()
+
 print("First 10 Processes:")
 print(table.head(10).to_string(index=False)) # prints first 10 rows, without the index Pandas uses as we have our own
+print()
+print("-------------------------------------------------------------------------")
 print()
 print("Last 10 Processes:")
 print(table.tail(10).to_string(index=False)) # prints last 10 rows, without the index Pandas uses as we have our own
 print()
-
+print("-------------------------------------------------------------------------")
+print()
 # Allows entire table to be output
 pd.set_option('display.max_rows', None)
 pd.set_option('display.max_columns', None)
