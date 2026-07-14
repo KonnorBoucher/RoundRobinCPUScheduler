@@ -1,15 +1,13 @@
-# Konnor Boucher, Operating Systems, Section 2 4-6:45 PM
-
 from Process import Process # imports object to hold processes
 from RandomProcessHelper import * # creates random times and has functions to get avg times
 import pandas as pd # imports pandas to create the table and manage it
 
 process_list = [] # contains all processes that aren't done yet
 waiting = [] # queue
-finished = [] # will make outputing much easier and more consistent
-time = 0 # time starts at 0
-q = 2 # quantum is 2 in this case
-cs = 0 # context switch is 0 in this case
+finished = [] # stores which processes are finished
+time = 0 
+q = 2 # amount of time before the cpu moves to the next process
+cs = 0 # how long the cpu takes to switch processes
 
 # interarrival times between 5 and 10
 interarrival_lowB = 5
